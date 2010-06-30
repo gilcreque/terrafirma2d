@@ -1,0 +1,12 @@
+project = "terrafirma2"
+name = TerraFirma2
+description = A port of the <a href="http://www.freecsstemplates.org/preview/terrafirma2">TerraFirma2 theme</a>
+screenshot = images/screenshot.png
+core = 6.x
+engine = phptemplate
+version = "6.x-1.0"
+
+; Theme specific styles. Any sub-themes should override this.
+stylesheets[all][] = styles/style.css
+
+
