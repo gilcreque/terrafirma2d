@@ -9,4 +9,10 @@ version = "6.x-1.0"
 ; Theme specific styles. Any sub-themes should override this.
 stylesheets[all][] = styles/style.css
 
-
+regions[aboveheader]            = above header
+regions[abovecontent]           = above content
+regions[belowcontent]           = below content
+regions[sidebar]                 = sidebar
+regions[leftupperfooter]       = left upper footer
+regions[rightupperfooter]      = right upper footer
+regions[footer]                  = footer

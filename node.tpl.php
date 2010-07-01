@@ -1,5 +1,5 @@
 <?php
-?>
+?>	
 
 <div id="node-<?php print $node->nid; ?>"  class="post node<?php if ($sticky) { print ' sticky'; } ?><?php if (!$status) { print ' node-unpublished'; } ?>">
 
@@ -23,20 +23,22 @@
 
 	    <?php if ($taxonomy): ?> 
 			<?php $fnd1 = array("<ul ", "</ul>", "</li>\n<li ", "<li ", "</li>", "class=\"terms\">"); ?>
-			<?php $rep1   = array("<p ", "</p>", "</span> , <span ", "<span ", "</span>", "class=\"terms\"> Tags: "); ?>
+			<?php $rep1   = array("<p ", "</p>", "</span>, <span ", "<span ", "</span>", "class=\"terms\"> Tags: "); ?>
 			<?php $terms = str_replace($fnd1, $rep1, $terms); ?>
 	    	<?php print $terms ?>
 	    <?php endif;?>
 
 		
 		<p class="links">
-		<a href="<?php print $base_path; ?>comment/reply/<?php print $node->nid; ?>#comment-form" class="comments">Comment<?php 
-				if ($comment_count > 0) {
-		print "s (" . $comment_count . ")";
-				} 
+			
+		<?php 
+			print "<a href=\"/comment/reply/" . $node->nid . "#comment-form\" class=\"comments\">Comment";
+			if ($comment_count > 0) {
+				print " (" . $comment_count . ")";
+			}
+			print "</a>";
 		?>
-
-		</a>
+		
 
 		<a href="<?php print $node_url ?>" title="<?php print $title ?>" class="more">More</a>
 		</p>
