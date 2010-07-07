@@ -16,7 +16,7 @@
 <div id="wrapper">
 
 	<?php if ($aboveheader): ?>
-		<div id="above_header"><?php print $aboveheader ?></div>
+		<div id="above-header" class="container"><?php print $aboveheader ?></div>
 	<?php endif; ?>
 
 	<div id="header" class="container">
@@ -80,24 +80,24 @@
 		<div id="content">
 
 			<?php if ($abovecontent): ?>
-				<div id="above_content"><?php print $abovecontent ?></div>
+				<div id="above-content"><?php print $abovecontent ?></div>
 			<?php endif; ?>
 
             <?php print $content ?>
 
 			<?php if ($belowcontent): ?>
-				<div id="below_content"><?php print $belowcontent ?></div>
+				<div id="below-content"><?php print $belowcontent ?></div>
 			<?php endif; ?>
 
 		</div>
 
 		<div id="sidebar">
 
-			<?php if ($sidebar): ?>
-				<?php print $sidebar ?>
-			<?php endif; ?>
-
 			<ul>
+
+				<?php if ($sidebar): ?>
+					<?php print $sidebar ?>
+				<?php endif; ?>
 
 				<li>
 
@@ -149,10 +149,6 @@
 				<?php print $leftupperfooter ?>
 			<?php endif; ?>
 
-				<h2>Aliquam sit amet veroeros</h2>
-
-				<p>Faucibus non sit amet elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat, dui sed posuere molestie, urna sapien porta purus, vel sodales ante erat sed arcu. Nunc semper, diam ut blandit elementum, ipsum purus vestibulum quam, sit amet auctor est ut risus. Maecenas sed dolore.</p>
-
 			</div>
 
 			<div class="col2">
@@ -160,18 +156,6 @@
 			<?php if ($rightupperfooter): ?>
 				<?php print $rightupperfooter ?>
 			<?php endif; ?>
-
-				<ul>
-
-					<li><a href="#">Faucibus non sit amet elit nulla</a></li>
-
-					<li><a href="#">Consectetur adipiscing elit integer</a></li>
-
-					<li><a href="#">Placerat dui sed posuere molestie</a></li>
-
-					<li><a href="#">Urna sapien porta purus vel</a></li>
-
-				</ul>
 
 			</div>
 
@@ -192,7 +176,7 @@
 	<p>(c) 2009 Sitename.com. Design by <a href="http://www.nodethirtythree.com/">nodethirtythree</a> + <a href="http://www.freecsstemplates.org/">Free CSS Templates</a></p>
 
 </div>
-
+<?php print $closure ?>
 </body>
 
 </html>

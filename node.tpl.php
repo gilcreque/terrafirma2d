@@ -27,20 +27,17 @@
 			<?php $terms = str_replace($fnd1, $rep1, $terms); ?>
 	    	<?php print $terms ?>
 	    <?php endif;?>
-
 		
 		<p class="links">
-			
-		<?php 
-			print "<a href=\"/comment/reply/" . $node->nid . "#comment-form\" class=\"comments\">Comment";
-			if ($comment_count > 0) {
-				print " (" . $comment_count . ")";
-			}
-			print "</a>";
-		?>
-		
-
-		<a href="<?php print $node_url ?>" title="<?php print $title ?>" class="more">More</a>
+			<?php 
+				print "<a href=\"/comment/reply/" . $node->nid . "#comment-form\" class=\"comments\">Comment";
+				if ($comment_count > 0) {
+					print " (" . $comment_count . ")";
+				}
+				print "</a>";
+			?>
+	
+			<a href="<?php print $node_url ?>" title="<?php print $title ?>" class="more">More</a>
 		</p>
 
 	</div>

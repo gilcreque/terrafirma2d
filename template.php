@@ -153,31 +153,6 @@ function terrafirma2_preprocess_page(&$variables) {
     drupal_set_html_head('<link rel="shortcut icon" href="'. check_url(theme_get_setting('favicon')) .'" type="image/x-icon" />');
   }
 
-  global $theme;
-  // Populate all block regions.
-  $regions = system_region_list($theme);
-  // Load all region content assigned via blocks.
-  foreach (array_keys($regions) as $region) {
-    // Prevent left and right regions from rendering blocks when 'show_blocks' == FALSE.
-    if (!(!$variables['show_blocks'] && ($region == 'left' || $region == 'right'))) {
-      $blocks = theme('blocks', $region);
-    }
-    else {
-      $blocks = '';
-    }
-    // Assign region to a region variable.
-    isset($variables[$region]) ? $variables[$region] .= $blocks : $variables[$region] = $blocks;
-  }
-
-  // Set up layout variable.
-  $variables['layout'] = 'none';
-  if (!empty($variables['left'])) {
-    $variables['layout'] = 'left';
-  }
-  if (!empty($variables['right'])) {
-    $variables['layout'] = ($variables['layout'] == 'left') ? 'both' : 'right';
-  }
-
   // Set mission when viewing the frontpage.
   if (drupal_is_front_page()) {
     $mission = filter_xss_admin(theme_get_setting('mission'));
