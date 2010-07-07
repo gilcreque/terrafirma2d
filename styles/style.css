@@ -364,6 +364,7 @@ div.txt>p {
 	border: 1px solid #DDE5CE;
 	margin-top: 50px;
 	padding: 20px;
+	line-height: 2em;
 }
 	
 
@@ -403,6 +404,10 @@ div.txt>p {
 }
 
 /* 2 Columns */
+#footer-bar a.active {
+	color: #ffffff;
+}
+
 
 .two-cols {
 	margin: 0 25px;

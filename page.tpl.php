@@ -99,42 +99,6 @@
 					<?php print $sidebar ?>
 				<?php endif; ?>
 
-				<li>
-
-					<h2>About me</h2>
-
-					<p><img src="/<?php print $directory; ?>/images/img03.jpg" width="210" height="72" alt="" class="border" /></p>
-
-					<p><strong>Nunc semper diam</strong> ut blandit elementum, ipsum purus vestibulum quam, sit amet justo sit amet erat.</p>
-
-				</li>
-
-				<li>
-
-					<h2>Nulla aliquam</h2>
-
-					<ul>
-
-						<li><a href="#">Faucibus non sit amet elit nulla</a></li>
-
-						<li><a href="#">Lorem ipsum dolor sit amet veroeros\</a></li>
-
-						<li><a href="#">Consectetur adipiscing elit integer</a></li>
-
-						<li><a href="#">Placerat dui sed posuere molestie</a></li>
-
-						<li><a href="#">Urna sapien porta purus vel</a></li>
-
-						<li><a href="#">Sodales ante erat sed arcu semper</a></li>
-
-						<li><a href="#">Diam ut blandit elementum purus</a></li>
-
-						<li><a href="#">Vestibulum quam sit amet auctor </a></li>
-
-					</ul>
-
-				</li>
-
 			</ul>
 
 		</div>
