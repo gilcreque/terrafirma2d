@@ -137,7 +137,7 @@
 		<?php print $footer ?>
 	<?php endif; ?>
 
-	<p>(c) 2009 Sitename.com. Design by <a href="http://www.nodethirtythree.com/">nodethirtythree</a> + <a href="http://www.freecsstemplates.org/">Free CSS Templates</a></p>
+	<p>(c) 2010 <?php print $site_name; ?>. Design by <a href="http://www.nodethirtythree.com/">nodethirtythree</a> + <a href="http://www.freecsstemplates.org/">Free CSS Templates</a> + Ported by <a href="http://gilcreque.com">Gil Creque</a></p> 
 
 </div>
 <?php print $closure ?>
