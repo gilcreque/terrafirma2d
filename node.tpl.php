@@ -30,7 +30,7 @@
 		
 		<p class="links">
 			<?php 
-				print "<a href=\"/comment/reply/" . $node->nid . "#comment-form\" class=\"comments\">Comment";
+				print "<a href=\"" . $base_path . "comment/reply/" . $node->nid . "#comment-form\" class=\"comments\">Comment";
 				if ($comment_count > 0) {
 					print " (" . $comment_count . ")";
 				}

@@ -32,7 +32,7 @@
 
 		</div>
 
-		<div id="banner"><img src="/<?php print $directory; ?>/images/img01.jpg" width="667" height="118" alt="" /></div>
+		<div id="banner"><img src="<?php print $base_path; ?><?php print $directory; ?>/images/img01.jpg" width="667" height="118" alt="" /></div>
 
 	</div>
 
